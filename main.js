@@ -38,19 +38,23 @@ function initGame() {
     // setup game difficulty
     switch (level) {
         case 'easy':
+            // 6.6 density
             minesNumber = 15;
             columnsNumber = 10;
             break;
         case 'medium':
-            minesNumber = 50;
+            // 5.9 density
+            minesNumber = 38;
             columnsNumber = 15;
             break;
         case 'hard':
-            minesNumber = 100;
+            // 5 density
+            minesNumber = 80;
             columnsNumber = 20;
             break;
         case 'impossible':
-            minesNumber = 140;
+            // 4 density
+            minesNumber = 100;
             columnsNumber = 20; 
             break;
     }
